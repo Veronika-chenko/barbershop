@@ -1,0 +1,30 @@
+.top-text {
+    // position: relative;
+    display: flex;
+    align-items: center;
+
+    @include font (600, 11px, 1.36, 0.1em);
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    &.light {
+        color: var(--light-theme-top-text-color);
+    }
+
+    &.dark {
+        color: var(--dark-theme-top-text-color);
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+        background-color: currentColor;
+        // flex-shrink: 0;
+    }
+
+
+}

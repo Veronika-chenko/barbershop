@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: var(--main-text-color);
+    font-family: Open-Sans, sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+// .section {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+
+//     @include desktop {
+//         padding-top: 94px;
+//         padding-bottom: 94px;
+//     }
+
+// }
