@@ -1,0 +1,99 @@
+// + fonts-installed
+// - problems with text organization on all screens
+
+.about {
+    &.section {
+        @include desktop {
+            padding-top: 163px;
+            padding-bottom: 88px;
+        }
+    } 
+    .container {
+        display: flex;
+    }
+}
+
+.about-list {
+    display: none;
+
+    @include tablet {
+        display: block;
+        margin-right: 30px;
+        flex-shrink: 0;
+    }
+
+    @include desktop {
+        display: flex;
+        margin-right: 64px;
+    }
+}
+
+.about-item {
+    &+& {
+        margin-top: 30px;
+    }
+
+    @include desktop {
+        &+& {
+            margin-top: 0;
+            margin-left: 30px;
+        }
+    }
+}
+
+.about-content {
+    // min-width: 330px;
+    width: 500px;
+    // flex-shrink: 0;
+}
+
+.about-top-text {
+    margin-bottom: 20px;
+    // @include desktop {
+    //     margin-bottom: 18px;
+    // }
+}
+
+.about-top-title {
+    @include font (null, 28px, 1.18, 0.05em);
+
+    width: 330px;
+
+    @include desktop {
+        @include font (null, 42px, 1.17, 0.05em);
+        // margin-bottom: 18px;
+        width: 483px;
+    }
+
+    color: var(--main-title-color);
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+
+    &.first {
+        @include font (null, 16px, 1.63, 0.02em);
+    }
+
+    &.second {
+        @include font (null, 14px, 1.86, 0.02em);
+        margin-bottom: 40px;
+    }
+
+    @include desktop {
+        &.first {
+            @include font (null, 18px, 1.67, null);
+            // margin-bottom: 18px;
+        }
+        &.second {
+            @include font (null, 14px, 1.86, 0.02em);
+            // margin-bottom: 38px;
+        }
+    }
+}
+
+// .about-text-second {
+
+// }

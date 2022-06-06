@@ -1,0 +1,75 @@
+// problems with item/picture position
+// 
+
+.masters {
+    background-color: #F7F7F7;
+    // width: 100%;
+    // margin: 0 auto;
+}
+
+.masters-top-title {
+    margin-bottom: 44px;
+}
+.masters-list {
+    margin-bottom: -64px;
+    @include desktop {
+        display: flex;
+        margin-left: -30px;
+    }
+}
+.masters-item {
+    text-align: center;
+    margin-bottom: 64px;
+    @include desktop {
+        flex-basis: calc(100% / 3 - 30px);
+        margin-left: 30px;
+    }
+    // max-width: 450px;
+    // margin: 0 auto;
+}
+
+.masters-title {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    color: #303030;
+    @include font (400, 18px, 1.39, 0.02em);
+    text-align: center;
+}
+.masters-text {
+    margin-bottom: 30px;
+    @include font (null, 14px, 1.36, 0.02em);
+    color: var(--accent-color);
+}
+
+.masters-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.masters-soc-item+.masters-soc-item {
+    margin-left: 10px;
+}
+
+.masters-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: #fff;
+    fill: #303030;
+    transition: fill 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.masters-soc-icon {
+    width: 20px;
+    height: 20px;
+}

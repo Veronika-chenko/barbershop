@@ -2,7 +2,7 @@
     font-family: Raleway, sans-serif;
     @include font (null, 42px, 1.17, 0.05em);
     // line-height: 49px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
     &.light {
         color: var(--light-theme-title-color);

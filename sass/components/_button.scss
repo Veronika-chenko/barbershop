@@ -21,11 +21,9 @@
     &.light {
         color: #303030;
     }
-
     &.dark {
         color: #ffffff;
     }
-
     &:hover,
     &:focus {
         color: var(--second-button-color);
