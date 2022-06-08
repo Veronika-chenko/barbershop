@@ -1,0 +1,23 @@
+:root {
+    --header-main-color: #ffffff;
+
+    --light-theme-top-text-color: #303030;
+    --dark-theme-top-text-color: rgba(157, 164, 189, 0.6);
+
+    --light-theme-title-color: #303030;
+    --dark-theme-title-color: #ffffff;
+
+    --light-text-color: #555555;
+    --dark-text-color: #9DA4BD;
+    // ////////////////////////////
+    --accent-color: #FF6C00;
+
+    --main-text-color: #555555;
+
+    --main-button-color: #303030;
+    --second-button-color: #ffffff;
+
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --gradient: linear-gradient(rgba(25, 28, 38, 0.5),
+            rgba(25, 28, 38, 0.5));
+}

@@ -1,0 +1,139 @@
+// + fonts-installed
+// is done except problem below
+// - there is wrong :focus order in the "header-connect" on TABLET
+// - wrong tab-size of logo on tablet (height=75...
+// so inherit container size, instead of 55)
+// 
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 32px;
+    @media screen and (max-width: 767px) {
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+    .container {
+        display: flex;
+        @include desktop {
+            align-items: center;
+        }
+    }
+}
+
+.header-logo {
+    margin-right: 60px;
+    @include desktop {
+        margin-right: 70px;
+    }
+}
+.logo-icon {
+    fill: #ffffff;
+    @include tablet {
+        fill: #303030;
+    }
+}
+
+// ///////////
+
+.nav {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    
+    &:not(:last-child) {
+        margin-right: 24px;
+
+        @include desktop {
+            margin-right: 40px;
+        }
+    }
+}
+.nav-link {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @include font (600, 12px, 1.33, 0.1em);
+    color: var(--header-main-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+// ///////////////
+
+.header-connect {
+    display: none;
+    
+    // on tablet there is wrong :focus-order
+    @include tablet {
+        display: block;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
+        flex-direction: column-reverse;
+        // margin-left: 40px;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-left: auto;
+    }
+}
+.header-tel {
+    @include desktop {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    @include font (600, 12px, 1.33, 0.1em);
+    color: var(--header-main-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.header-button {
+    // problem with align-items on tablet
+    // margin-top: 40px;
+    margin-bottom: 20px;
+    
+    @include desktop {
+        margin-left: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+// ////////
+.mob-menu-button {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+    @include tablet {
+        display: none;
+    }
+}
+
