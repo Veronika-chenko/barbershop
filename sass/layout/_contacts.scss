@@ -1,0 +1,115 @@
+.contact-wrap {
+    background-color: #191C26;
+
+    & > .container {
+        @include desktop {
+            display: flex;
+        } 
+    }
+}
+// ///////////
+.online {
+    @include desktop {
+        flex-grow: 1;
+    }
+    
+    .container {
+        padding-left: 31px;
+    }
+}
+
+.online-top-title {
+    margin-bottom: 44px;
+}
+.form-field {
+    margin-bottom: 44px;
+}
+.form-label {
+    @include font(600, 11px, 1.36, 0.1em);
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 250ms var(--timing-function);
+    
+    // &:hover,
+    // &:focus {
+    //     color: #FFFFFF;
+    // }
+
+}
+.form-input {
+    
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);;
+}
+
+.contacts {
+    @include desktop {
+        width: calc(50% - 15px);
+    }
+    
+    background-image: url(../images/contacts-mob-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/contacts-mob-2x-min.png);
+        }
+    @include tablet {
+        background-image: url(../images/contacts-tab-min.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/contacts-tab-2x-min.png);
+            }
+    }
+    @include desktop {
+        background-image: url(../images/contacts-desk-min.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/contacts-desk-2x-min.png);
+        }
+    }
+    .container {
+        padding-left: 31px;
+    }
+}
+.contacts-top-title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.contacts-list {
+    margin-bottom: 70px;
+}
+
+.contacts-item {
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+    @include font (400, 18px, 1.67, 0.02em);
+    color: #9DA4BD;
+}
+.contacts-icon {
+    margin-right: 16px;
+}
+.contacts-top-text {
+    color: #ffffff;
+
+    &:before {
+        background-color: rgba(157, 164, 189, 0.4);
+    }
+}
+
+.contacts-text {
+    color: #9DA4BD;
+}

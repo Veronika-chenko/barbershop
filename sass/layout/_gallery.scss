@@ -1,0 +1,30 @@
+// can't choose right picture source
+.gallery {
+    .container {
+        outline: solid tomato;
+    }
+}
+.gallery-top-text {
+    margin-bottom: 44px;
+}
+.gallery-list {
+    margin-bottom: -30px;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+}
+.gallery-item {
+    margin-bottom: 30px;
+    @include tablet {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+    }
+    @include desktop{
+        flex-basis: calc(100% / 4 - 30px);
+        margin-left: 30px;
+    }
+}

@@ -169,6 +169,7 @@
                 </ul>
             </div>
         </section>
+        
 
         <section class="masters section">
             <div class="container">
@@ -311,50 +312,128 @@
                 </ul>
             </div>
         </section>
-        <section class="gallery">
+        <!-- /////////////////////////////// -->
+        <section class="gallery section">
             <div class="container">
-                <p>На латинском языке “барба” означает “борода”</p>
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
+                <p class="gallery-top-text top-text light">На латинском языке “барба” означает “борода”</p>
+                <h2 class="visually-hidden">Галерея работ</h2>
+                
+                <ul class="gallery-list list">
+                    <li class="gallery-item">
+                        <picture>
+                            <source 
+                                srcset="./images/gallery-1-desk-min.jpg 1x,
+                                ./images/gallery-1-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
+                            <source srcset="./images/gallery-1-tab-min.jpg 1x,
+                                ./images/gallery-1-tab-2x-min.jpg 2x" madia="(min-width:768px)">
+                            <source srcset="./images/gallery-1-mob-min.jpg 1x,
+                                ./images/gallery-1-mob-2x-min.jpg 2x" madia="(min-width:480px)">
+                            <img src="./images/gallery-1-mob-min.jpg" alt="барбер бреет клиента">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/gallery-2-desk-min.jpg 1x,
+                                ./images/gallery-2-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
+                            <source srcset="./images/gallery-2-tab-min.jpg 1x,
+                                ./images/gallery-2-tab-2x-min.jpg 2x" madia="(min-width:768px)">
+                            <source srcset="./images/gallery-2-mob-min.jpg 1x,
+                                ./images/gallery-2-mob-2x-min.jpg 2x" madia="(min-width:480px)">
+                            <img src="./images/gallery-2-mob-min.jpg" alt="барбер бреет клиента">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/gallery-3-desk-min.jpg 1x,
+                                ./images/gallery-3-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
+                            <source srcset="./images/gallery-3-tab-min.jpg 1x,
+                                ./images/gallery-3-tab-2x-min.jpg 2x" madia="(min-width:768px)">
+                            <source srcset="./images/gallery-3-mob-min.jpg 1x,
+                                ./images/gallery-3-mob-2x-min.jpg 2x" madia="(min-width:480px)">
+                            <img src="./images/gallery-3-mob-min.jpg" alt="барбер бреет клиента">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/gallery-4-desk-min.jpg 1x,
+                                ./images/gallery-4-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
+                            <source srcset="./images/gallery-4-tab-min.jpg 1x,
+                                ./images/gallery-4-tab-2x-min.jpg 2x" madia="(min-width:768px)">
+                            <source srcset="./images/gallery-4-mob-min.jpg 1x,
+                                ./images/gallery-4-mob-2x-min.jpg 2x" madia="(min-width:480px)">
+                            <img src="./images/gallery-4-mob-min.jpg" alt="барбер бреет клиента">
+                        </picture>
+                    </li>
                 </ul>
             </div>
         </section>
-        <div class="contact-wrap section">
+        <!-- <div class="contact-wrap section"> -->
+        <div class="contact-wrap">
             <div class="container">
-                <section class="online">
-                    <h2 class="online-top-title top-title dark">Онлайн-запись</h2>
-                    <form action="">
-                        <div>
-                            <label for="">Имя*</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Телефон*</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">сообщение</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <button type="submit" class="button dark"></button>
-                    </form>
+                
+                <section class="online section">
+                    <div class="container">
+                        <h2 class="online-top-title top-title dark">Онлайн-запись</h2>
+                        <form class="online-form">
+                            <div class="form-field">
+                                <label for="name" class="form-label">Имя*</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    required>
+                            </div>
+                            <div class="form-field">
+                                <label for="tel" class="form-label">Телефон*</label>
+                                <input 
+                                    type="tel" 
+                                    id="tel" 
+                                    name="tel" 
+                                    class="form-input"
+                                    required>
+                            </div>
+                            <div class="form-field">
+                                <label for="user-text" class="form-label">сообщение</label>
+                                <textarea name="" id="user-text" class=""></textarea>
+                            </div>
+                            <button type="submit" class="form-button button dark">отправить</button>
+                        </form>
+                    </div>
     
                 </section>
-                <section class="contacts">
-                    <h2 class="contacts-top-title top-title dark">Контакты</h2>
-                    <address>
-                        <ul class="contacts-list">
-                            <li class="contacts-item"><a href="" class="contacts-link link">ул. Васильковая, 7А
-                                    Киев, 08132</a></li>
-                            <li class="contacts-item"><a href="" class="contacts-link link">+38 044 111 11 11</a></li>
-                            <li class="contacts-item"><a href="" class="contacts-link link">barbershop@email.com</a></li>
-                        </ul>
-                    </address>
-                    <p class="contacts-top-text top-text dark">время работы</p>
-                    <p class="contacts-text">Ежедневно с 9:00 до 22:00</p>
+                <section class="contacts section">
+                    <div class="container">
+                        <h2 class="contacts-top-title top-title dark">Контакты</h2>
+                        <address>
+                            <ul class="contacts-list list">
+                                <li class="contacts-item">
+                                    <a href="" class="contacts-link link">
+                                        <svg class="contacts-icon" width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#icon-map"></use>
+                                        </svg>
+                                        ул. Васильковая, 7А
+                                        Киев, 08132</a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="" class="contacts-link link">
+                                        <svg class="contacts-icon" width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 044 111 11 11</a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="" class="contacts-link link">
+                                        <svg class="contacts-icon" width="24" height="24">
+                                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                                        </svg>
+                                        barbershop@email.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <p class="contacts-top-text top-text dark">время работы</p>
+                        <p class="contacts-text">Ежедневно с 9:00 до 22:00</p>
+                    </div>
                 </section>
             </div>
         </div>
