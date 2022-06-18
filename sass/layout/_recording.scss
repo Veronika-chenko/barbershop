@@ -1,24 +1,20 @@
-@mixin font($fw, $fs, $lh, $ls) {
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $lh;
-    letter-spacing: $ls;
-}
+// .contact-wrap {
+//     background-color: #191C26;
+//     ;
 
-@mixin mobile {
-    @media screen and (min-width: 448px) {
-        @content;
-    }
-}
+//     .container {
+//         display: flex;
+//     }
+// }
 
-@mixin tablet {
-    @media screen and (min-width: 720px) {
-        @content;
-    }
-}
+// .contacts {
+//     width: calc(50% - 15px);
+// }
 
-@mixin desktop {
-    @media screen and (min-width: 1200px) {
-        @content;
-    }
-}
+// .online {
+//     flex-grow: 1;
+// }
+
+// .online-top-title {
+//     margin-bottom: 44px;
+// }
