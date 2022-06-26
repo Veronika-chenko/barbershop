@@ -27,10 +27,10 @@
             </button>
             <nav class="nav">
                 <ul class="nav-list list">
-                    <li class="nav-item"><a href="" class="nav-link link">О нас</a></li>
-                    <li class="nav-item"><a href="" class="nav-link link">Услуги и цены</a></li>
-                    <li class="nav-item"><a href="" class="nav-link link">Мастера</a></li>
-                    <li class="nav-item"><a href="" class="nav-link link">Контакты</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link link">О нас</a></li>
+                    <li class="nav-item"><a href="#prices" class="nav-link link">Услуги и цены</a></li>
+                    <li class="nav-item"><a href="#masters" class="nav-link link">Мастера</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link link">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header-connect">
@@ -58,16 +58,23 @@
             </div>
         </section>
         <!-- /////////////// -->
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container">
                 <ul class="about-list list">
                     <li class="about-item">
                         <picture>
-                            <source srcset="./images/about-desk-img-1.jpg 1x,
-                                    ./images/about-desk-img-1-2x.jpg 2x" media="(min-width:1280px)">
-                            <source srcset="./images/about-tab-img-1.jpg 1x,
-                                    ./images/about-tab-img-1-2x.jpg 2x" media="(min-width:768px)">
-                            <img src="./images/about-tab-img-1.jpg" alt="" class="about-img">
+                            <source srcset="./images/about/web/about-desk-img-1.webp 1x,
+                                ./images/about/web/about-desk-img-1-2x.webp 2x" media="(min-width:1280px)" 
+                                type="image/webp">
+                            <source srcset="./images/about/about-desk-img-1.jpg 1x,
+                                    ./images/about/about-desk-img-1-2x.jpg 2x" media="(min-width:1280px)" type="image/jpg">
+                            
+                            <source srcset="./images/about/web/about-tab-img-1.webp 1x,
+                                ./images/about/web/about-tab-img-1-2x.webp 2x" media="(min-width:768px)" type="image/webp">
+                            <source srcset="./images/about/about-tab-img-1.jpg 1x,
+                                ./images/about/about-tab-img-1-2x.jpg 2x" media="(min-width:768px)" type="image/jpg">
+
+                            <img src="./images/about/about-tab-img-1.jpg" alt="" class="about-img" loading="lazy">
                         </picture>
                     </li>
                     <li class="about-item">
@@ -95,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="prices section">
+        <section class="prices section" id="prices">
             <div class="container">
                 <p class="prices-top-text top-text dark">Проведи время в компании лучших мастеров</p>
                 <h2 class="prices-top-title top-title dark">Услуги и цены</h2>
@@ -171,7 +178,7 @@
         </section>
         
 
-        <section class="masters section">
+        <section class="masters section" id="masters">
             <div class="container">
                 <p class="masters-top-text top-text light">для настоящих ценителей атмосферы</p>
                 <h2 class="masters-top-title top-title light">Наши мастера</h2>
@@ -179,13 +186,21 @@
 
                     <li class="masters-item">
                         <picture>
-                            <source srcset="./images/master-1-desk.jpg 1x, 
-                                ./images/master-1-desk-2x.jpg 2x" media="(min-width:1280px)">
-                            <source srcset="./images/master-1-tab.jpg 1x,
-                                ./images/master-1-tab-2x.jpg 2x" media="(min-width:768px)">
-                            <source srcset="./images/master-1-mob.jpg 1x,
-                                ./images/master-1-mob-2x.jpg 2x" media="(min-width:480px)">
-                            <img scr="./images/master-1-mob.jpg" alt="John Smith">
+                            <source srcset="./images/masters/web/master-1-desk.webp 1x, 
+                                ./images/masters/web/master-1-desk-2x.webp 2x" media="(min-width:1280px)" type="image/webp">
+                            <source srcset="./images/masters/master-1-desk.jpg 1x, 
+                                ./images/masters/master-1-desk-2x.jpg 2x" media="(min-width:1280px)" type="image/jpg">
+
+                            <source srcset="./images/masters/web/master-1-tab.webp 1x,
+                                ./images/masters/web/master-1-tab-2x.webp 2x" media="(min-width:768px)" type="image/webp">
+                            <source srcset="./images/masters/master-1-tab.jpg 1x,
+                                ./images/masters/master-1-tab-2x.jpg 2x" media="(min-width:768px)" type="image/jpg">
+
+                            <source srcset="./images/masters/web/master-1-mob.webp 1x,
+                                ./images/masters/web/master-1-mob-2x.webp 2x" media="(min-width:480px)" type="image/webp">
+                            <source srcset="./images/masters/master-1-mob.jpg 1x,
+                                ./images/masters/master-1-mob-2x.jpg 2x" media="(min-width:480px)" type="image/jpg">
+                            <img scr="./images/masters/master-1-mob.jpg" alt="John Smith" loading="lazy">
                         </picture>
 
                         <h3 class="masters-title">John Smith</h3>
@@ -224,13 +239,24 @@
 
                     <li class="masters-item">
                         <picture>
-                            <source srcset="./images/master-2-desk.jpg 1x,
-                                ./images/master-2-desk-2x.jpg 2x" media="(min-width:1280px)">
-                            <source srcset="./images/master-2-tab.jpg 1x,
-                                ./images/master-2-tab-2x.jpg 2x" media="(min-width:768px)">
-                            <source srcset="./images/master-2-mob.jpg 1x,
-                                ./images/master-2-mob-2x.jpg 2x" media="(min-width:480px)">
-                            <img scr="./images/master-2-mob.jpg" alt="Michele Doe">
+                            <source srcset="./images/masters/web/master-2-desk.webp 1x, 
+                                ./images/masters/web/master-2-desk-2x.webp 2x" media="(min-width:1280px)"
+                                type="image/webp">
+                            <source srcset="./images/masters/master-2-desk.jpg 1x, 
+                                ./images/masters/master-2-desk-2x.jpg 2x" media="(min-width:1280px)" type="image/jpg">
+                            
+                            <source srcset="./images/masters/web/master-2-tab.webp 1x,
+                                 ./images/masters/web/master-2-tab-2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/masters/master-2-tab.jpg 1x,
+                                 ./images/masters/master-2-tab-2x.jpg 2x" media="(min-width:768px)" type="image/jpg">
+                            
+                            <source srcset="./images/masters/web/master-2-mob.webp 1x,
+                                 ./images/masters/web/master-2-mob-2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <source srcset="./images/masters/master-2-mob.jpg 1x,
+                                ./images/masters/master-2-mob-2x.jpg 2x" media="(min-width:480px)" type="image/jpg">
+                            <img scr="./images/masters/master-2-mob.jpg" alt="Michele Doe" loading="lazy">
                         </picture>
                         <h3 class="masters-title">Michele Doe</h3>
                         <p class="masters-text">Extreme Barber</p>
@@ -268,13 +294,24 @@
 
                     <li class="masters-item">
                         <picture>
-                            <source srcset="./images/master-3-desk.jpg 1x,
-                                ./images/master-3-desk-2x.jpg 2x" media="(min-width:1280px)">
-                            <source srcset="./images/master-3-tab.jpg 1x,
-                                ./images/master-3-tab-2x.jpg 2x" media="(min-width:768px)">
-                            <source srcset="./images/master-3-mob.jpg 1x,
-                                ./images/master-3-mob-2x.jpg 2x" media="(min-width:480px)">   
-                            <img scr="./images/master-3-mob.jpg" alt="Alan Black">
+                            <source srcset="./images/masters/web/master-3-desk.webp 1x, 
+                                ./images/masters/web/master-3-desk-2x.webp 2x" media="(min-width:1280px)"
+                                type="image/webp">
+                            <source srcset="./images/masters/master-3-desk.jpg 1x, 
+                                ./images/masters/master-3-desk-2x.jpg 2x" media="(min-width:1280px)" type="image/jpg">
+                            
+                            <source srcset="./images/masters/web/master-3-tab.webp 1x,
+                                ./images/masters/web/master-3-tab-2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/masters/master-3-tab.jpg 1x,
+                                ./images/masters/master-3-tab-2x.jpg 2x" media="(min-width:768px)" type="image/jpg">
+                            
+                            <source srcset="./images/masters/web/master-3-mob.webp 1x,
+                                ./images/masters/web/master-3-mob-2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <source srcset="./images/masters/master-3-mob.jpg 1x,
+                                ./images/masters/master-3-mob-2x.jpg 2x" media="(min-width:480px)" type="image/jpg">
+                            <img scr="./images/masters/master-3-mob.jpg" alt="Alan Black" loading="lazy">
                         </picture>
                         <h3 class="masters-title">Alan Black</h3>
                         <p class="masters-text">Extreme Barber</p>
@@ -321,47 +358,108 @@
                 <ul class="gallery-list list">
                     <li class="gallery-item">
                         <picture>
-                            <source 
-                                srcset="./images/gallery-1-desk-min.jpg 1x,
-                                ./images/gallery-1-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
-                            <source srcset="./images/gallery-1-tab-min.jpg 1x,
-                                ./images/gallery-1-tab-2x-min.jpg 2x" madia="(min-width:768px)">
-                            <source srcset="./images/gallery-1-mob-min.jpg 1x,
-                                ./images/gallery-1-mob-2x-min.jpg 2x" madia="(min-width:480px)">
-                            <img src="./images/gallery-1-mob-min.jpg" alt="барбер бреет клиента">
+                            <source srcset="./images/gallery/web/gallery-1-desk-min.webp 1x,
+                                    ./images/gallery/web/gallery-1-desk-2x-min.webp 2x" madia="(min-width:1280px)" type="image/webp">
+                            <source srcset="./images/gallery/gallery-1-desk-min.jpg 1x,
+                                    ./images/gallery/gallery-1-desk-2x-min.jpg 2x" madia="(min-width:1280px)" type="image/jpg">
+
+
+                            <source srcset="./images/gallery/web/gallery-1-tab-min.webp 1x,
+                                ./images/gallery/web/gallery-1-tab-2x-min.webp2x" madia="(min-width:768px)" type="image/webp">
+                            <source srcset="./images/gallery/gallery-1-tab-min.jpg 1x,
+                                ./images/gallery/gallery-1-tab-2x-min.jpg 2x" madia="(min-width:768px)" type="image/jpg">
+
+
+                            <source srcset="./images/gallery/web/gallery-1-mob-min.webp 1x,
+                                ./images/gallery/web/gallery-1-mob-2x-min.webp 2x" madia="(min-width:480px)" type="image/webp">
+                            <source srcset="./images/gallery/gallery-1-mob-min.jpg 1x,
+                                ./images/gallery/gallery-1-mob-2x-min.jpg 2x" madia="(min-width:480px)" type="image/jpg">
+
+                            <img src="./images/gallery/gallery-1-mob-min.jpg" alt="барбер бреет клиента" loading="lazy">
                         </picture>
                     </li>
                     <li class="gallery-item">
                         <picture>
-                            <source srcset="./images/gallery-2-desk-min.jpg 1x,
-                                ./images/gallery-2-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
-                            <source srcset="./images/gallery-2-tab-min.jpg 1x,
-                                ./images/gallery-2-tab-2x-min.jpg 2x" madia="(min-width:768px)">
-                            <source srcset="./images/gallery-2-mob-min.jpg 1x,
-                                ./images/gallery-2-mob-2x-min.jpg 2x" madia="(min-width:480px)">
-                            <img src="./images/gallery-2-mob-min.jpg" alt="барбер бреет клиента">
+                            <source srcset="./images/gallery/web/gallery-2-desk-min.webp 1x,
+                                ./images/gallery/web/gallery-2-desk-2x-min.webp 2x" madia="(min-width:1280px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-2-desk-min.jpg 1x,
+                                ./images/gallery/gallery-2-desk-2x-min.jpg 2x" madia="(min-width:1280px)"
+                                type="image/jpg">
+                            
+                            
+                            <source srcset="./images/gallery/web/gallery-2-tab-min.webp 1x,
+                                ./images/gallery/web/gallery-2-tab-2x-min.webp2x" madia="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-2-tab-min.jpg 1x,
+                                ./images/gallery/gallery-2-tab-2x-min.jpg 2x" madia="(min-width:768px)"
+                                type="image/jpg">
+                            
+                            
+                            <source srcset="./images/gallery/web/gallery-2-mob-min.webp 1x,
+                                ./images/gallery/web/gallery-2-mob-2x-min.webp 2x" madia="(min-width:480px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-2-mob-min.jpg 1x,
+                                 ./images/gallery/gallery-2-mob-2x-min.jpg 2x" madia="(min-width:480px)"
+                                type="image/jpg">
+                            
+                            <img src="./images/gallery/gallery-2-mob-min.jpg" alt="барбер бреет клиента" loading="lazy">
                         </picture>
                     </li>
                     <li class="gallery-item">
                         <picture>
-                            <source srcset="./images/gallery-3-desk-min.jpg 1x,
-                                ./images/gallery-3-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
-                            <source srcset="./images/gallery-3-tab-min.jpg 1x,
-                                ./images/gallery-3-tab-2x-min.jpg 2x" madia="(min-width:768px)">
-                            <source srcset="./images/gallery-3-mob-min.jpg 1x,
-                                ./images/gallery-3-mob-2x-min.jpg 2x" madia="(min-width:480px)">
-                            <img src="./images/gallery-3-mob-min.jpg" alt="барбер бреет клиента">
+                            <source srcset="./images/gallery/web/gallery-3-desk-min.webp 1x,
+                                ./images/gallery/web/gallery-3-desk-2x-min.webp 2x" madia="(min-width:1280px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-3-desk-min.jpg 1x,
+                                ./images/gallery/gallery-3-desk-2x-min.jpg 2x" madia="(min-width:1280px)"
+                                type="image/jpg">
+                            
+                            
+                            <source srcset="./images/gallery/web/gallery-3-tab-min.webp 1x,
+                                ./images/gallery/web/gallery-3-tab-2x-min.webp2x" madia="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-3-tab-min.jpg 1x,
+                                ./images/gallery/gallery-3-tab-2x-min.jpg 2x" madia="(min-width:768px)"
+                                type="image/jpg">
+                            
+                            
+                            <source srcset="./images/gallery/web/gallery-3-mob-min.webp 1x,
+                                ./images/gallery/web/gallery-3-mob-2x-min.webp 2x" madia="(min-width:480px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-3-mob-min.jpg 1x,
+                                ./images/gallery/gallery-3-mob-2x-min.jpg 2x" madia="(min-width:480px)"
+                                type="image/jpg">
+                            
+                            <img src="./images/gallery/gallery-3-mob-min.jpg" alt="барбер бреет клиента" loading="lazy">
                         </picture>
                     </li>
                     <li class="gallery-item">
                         <picture>
-                            <source srcset="./images/gallery-4-desk-min.jpg 1x,
-                                ./images/gallery-4-desk-2x-min.jpg 2x" madia="(min-width:1280px)">
-                            <source srcset="./images/gallery-4-tab-min.jpg 1x,
-                                ./images/gallery-4-tab-2x-min.jpg 2x" madia="(min-width:768px)">
-                            <source srcset="./images/gallery-4-mob-min.jpg 1x,
-                                ./images/gallery-4-mob-2x-min.jpg 2x" madia="(min-width:480px)">
-                            <img src="./images/gallery-4-mob-min.jpg" alt="барбер бреет клиента">
+                            <source srcset="./images/gallery/web/gallery-4-desk-min.webp 1x,
+                                ./images/gallery/web/gallery-4-desk-2x-min.webp 2x" madia="(min-width:1280px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-4-desk-min.jpg 1x,
+                                ./images/gallery/gallery-4-desk-2x-min.jpg 2x" madia="(min-width:1280px)"
+                                type="image/jpg">
+                            
+                            
+                            <source srcset="./images/gallery/web/gallery-4-tab-min.webp 1x,
+                                ./images/gallery/web/gallery-4-tab-2x-min.webp2x" madia="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-4-tab-min.jpg 1x,
+                                ./images/gallery/gallery-4-tab-2x-min.jpg 2x" madia="(min-width:768px)"
+                                type="image/jpg">
+                            
+                            
+                            <source srcset="./images/gallery/web/gallery-4-mob-min.webp 1x,
+                                ./images/gallery/web/gallery-4-mob-2x-min.webp 2x" madia="(min-width:480px)"
+                                type="image/webp">
+                            <source srcset="./images/gallery/gallery-4-mob-min.jpg 1x,
+                                ./images/gallery/gallery-4-mob-2x-min.jpg 2x" madia="(min-width:480px)"
+                                type="image/jpg">
+                            
+                            <img src="./images/gallery/gallery-4-mob-min.jpg" alt="барбер бреет клиента" loading="lazy">
                         </picture>
                     </li>
                 </ul>
@@ -395,14 +493,18 @@
                             </div>
                             <div class="form-field">
                                 <label for="user-text" class="form-label">сообщение</label>
-                                <textarea name="" id="user-text" class=""></textarea>
+                                <textarea name="" 
+                                id="user-text" 
+                                class="user-text"
+                                
+                                ></textarea>
                             </div>
                             <button type="submit" class="form-button button dark">отправить</button>
                         </form>
                     </div>
     
                 </section>
-                <section class="contacts section">
+                <section class="contacts section" id="contacts">
                     <div class="container">
                         <h2 class="contacts-top-title top-title dark">Контакты</h2>
                         <address>
@@ -438,12 +540,18 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>&#169; Copyright 2022</p>
-        <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Youtube</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-list list">
+                <li class="footer-item">
+                    <a href="" class="footer-link link">Instagram</a>
+                </li>
+                <li class="footer-item">
+                    <a href="" class="footer-link link">Youtube</a>
+                </li>
+            </ul>
+            <p class="footer-copyright">&#169; Copyright 2022</p>
+        </div>
     </footer>
 </body>
 </html>

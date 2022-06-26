@@ -1,18 +1,18 @@
 // + fonts-installed
+
 // is done except problem below
-// - there is wrong :focus order in the "header-connect" on TABLET
-// - wrong tab-size of logo on tablet (height=75...
+// 1) there is wrong :focus order in the "header-connect" on TABLET
+// 2) wrong tab-size of logo on tablet (height=75...
 // so inherit container size, instead of 55)
+// 3) in tab -> wrong height of .mob-menu-button,
+// it should be 40px;
 // 
 .header {
     position: absolute;
     width: 100%;
     padding-top: 32px;
-    @media screen and (max-width: 767px) {
-        padding-left: 31px;
-        padding-right: 31px;
-    }
     .container {
+        // width: 100%;
         display: flex;
         @include desktop {
             align-items: center;
