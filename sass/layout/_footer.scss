@@ -5,16 +5,17 @@
         padding-top: 56px;
         padding-bottom: 56px;
     }
+    .container {
+        @include tablet {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
 }
-.container {
-    @include tablet {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
+
 .footer-list {
     display: flex;
     justify-content: flex-end;
