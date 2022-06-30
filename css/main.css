@@ -856,10 +856,6 @@ img {
   height: 20px;
 }
 
-.gallery .container {
-  outline: solid tomato;
-}
-
 .gallery-top-text {
   margin-bottom: 44px;
 }
@@ -948,42 +944,6 @@ img {
   resize: none;
 }
 
-.contacts {
-  background-image: url(../images/contacts/contacts-mob-min.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-@media screen and (min-width: 1280px) {
-  .contacts {
-    width: calc(50% - 15px);
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../images/contacts/contacts-mob-2x-min.png);
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacts {
-    background-image: url(../images/contacts/contacts-tab-min.png);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../images/contacts/contacts-tab-2x-min.png);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .contacts {
-    background-image: url(../images/contacts/contacts-desk-min.png);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../images/contacts/contacts-desk-2x-min.png);
-  }
-}
 .contacts .container {
   padding-left: 31px;
 }
@@ -1074,6 +1034,10 @@ img {
   line-height: 1.3636363636;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms var(--timing-function);
+}
+.footer-link:hover, .footer-link:focus {
+  color: var(--accent-color);
 }
 
 .footer-copyright {

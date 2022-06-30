@@ -41,6 +41,11 @@
 .footer-link {
     @include font (600, 11px, calc(15px/11px), 0.2em);
     color: #303030;
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 .footer-copyright {
     @include font (600, 11px, calc(15px/11px), 0.2em);

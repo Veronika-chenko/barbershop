@@ -1,6 +1,5 @@
 .contact-wrap {
     background-color: #191C26;
-
     & > .container {
         @include desktop {
             display: flex;
@@ -58,36 +57,36 @@
     resize: none;
 }
 .contacts {
-    @include desktop {
-        width: calc(50% - 15px);
-    }
+    // @include desktop {
+    //     width: calc(50% - 15px);
+    // }
     
-    background-image: url(../images/contacts/contacts-mob-min.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // background-image: url(../images/contacts/contacts-mob-min.png);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
 
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/contacts-mob-2x-min.png);
-        }
-    @include tablet {
-        background-image: url(../images/contacts/contacts-tab-min.png);
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/contacts/contacts-tab-2x-min.png);
-            }
-    }
-    @include desktop {
-        background-image: url(../images/contacts/contacts-desk-min.png);
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/contacts-desk-2x-min.png);
-        }
-    }
+    // @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //         background-image: url(../images/contacts/contacts-mob-2x-min.png);
+    //     }
+    // @include tablet {
+    //     background-image: url(../images/contacts/contacts-tab-min.png);
+    //     @media (min-device-pixel-ratio: 2),
+    //         (min-resolution: 192dpi),
+    //         (min-resolution: 2dppx) {
+    //             background-image: url(../images/contacts/contacts-tab-2x-min.png);
+    //         }
+    // }
+    // @include desktop {
+    //     background-image: url(../images/contacts/contacts-desk-min.png);
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //         background-image: url(../images/contacts/contacts-desk-2x-min.png);
+    //     }
+    // }
     .container {
         padding-left: 31px;
     }
