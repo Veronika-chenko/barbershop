@@ -79,13 +79,21 @@
                     </li>
                     <li class="about-item">
                         <picture>
-                            <source srcset="./images/about-desk-img-2.jpg 1x,
-                                    ./images/about-desk-img-2-2x.jpg 2x" media="(min-width:1280px)">
-                            <source srcset="./images/about-tab-img-1.jpg 1x,
-                                    ./images/about-tab-img-2-2x.jpg 2x" media="(min-width:768px)">
-                            <img src="./images/about-tab-img-2.jpg" alt="" class="about-img">
+                            <source srcset="./images/about/web/about-desk-img-2.webp 1x,
+                                ./images/about/web/about-desk-img-2-2x.webp 2x" media="(min-width:1280px)"
+                                type="image/webp">
+                            <source srcset="./images/about/about-desk-img-2.jpg 1x,
+                                ./images/about/about-desk-img-2-2x.jpg 2x" media="(min-width:1280px)"
+                                type="image/jpg">
+                        
+                            <source srcset="./images/about/web/about-tab-img-2.webp 1x,
+                                ./images/about/web/about-tab-img-2-2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/about/about-tab-img-2.jpg 1x,
+                                 ./images/about/about-tab-img-2-2x.jpg 2x" media="(min-width:768px)" type="image/jpg">
+                        
+                            <img src="./images/about/about-tab-img-2.jpg" alt="" class="about-img" loading="lazy">
                         </picture>
-    
                     </li>
                 </ul>
                 <div class="about-content">

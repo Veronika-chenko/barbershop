@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
 
-    @include font (600, 11px, 1.36, 0.1em);
+    @include font (600, 11px, calc(15px / 11px), 0.1em);
     text-transform: uppercase;
 
     margin-bottom: 20px;

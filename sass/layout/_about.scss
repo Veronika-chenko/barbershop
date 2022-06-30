@@ -40,28 +40,20 @@
         }
     }
 }
-
-// .about-content {
-//     // min-width: 330px;
-//     // width: 500px;
-//     // flex-shrink: 0;
-// }
-
 .about-top-text {
-    margin-bottom: 20px;
-    // @include desktop {
-    //     margin-bottom: 18px;
-    // }
+    @include desktop {
+        margin-bottom: 18px;
+    }
 }
 
 .about-top-title {
-    @include font (null, 28px, 1.18, 0.05em);
+    @include font (null, 28px, calc(33px / 28px), 0.05em);
 
     width: 330px;
 
     @include desktop {
-        @include font (null, 42px, 1.17, 0.05em);
-        // margin-bottom: 18px;
+        @include font (null, 42px, calc(49px / 42px), 0.05em);
+        margin-bottom: 18px;
         width: 483px;
     }
 
@@ -71,29 +63,40 @@
 
 .about-text {
     color: var(--main-text-color);
-    margin-bottom: 20px;
 
     &.first {
-        @include font (null, 16px, 1.63, 0.02em);
+        @include font (null, 16px, calc(26px / 16px), 0.02em);
+        max-width: 400px;
+        margin-bottom: 20px;
+        
     }
 
     &.second {
-        @include font (null, 14px, 1.86, 0.02em);
+        @include font (null, 14px, calc(26px / 14px), 0.02em);
+        max-width: 378px;
         margin-bottom: 40px;
     }
-
-    @include desktop {
+     
+    @include tablet {
+        margin-bottom: 32px;
         &.first {
-            @include font (null, 18px, 1.67, null);
-            // margin-bottom: 18px;
+            max-width: 300px;
         }
         &.second {
-            @include font (null, 14px, 1.86, 0.02em);
-            // margin-bottom: 38px;
+            max-width: 310px;
+        }
+    }
+    @include desktop {
+        max-width: 500px;
+        
+        &.first {
+            @include font (null, 18px, calc(30px / 18px), null);
+            max-width: 500px;
+            margin-bottom: 18px;
+        }
+        &.second {
+            margin-bottom: 32px;
+            max-width: 450px;
         }
     }
 }
-
-// .about-text-second {
-
-// }
