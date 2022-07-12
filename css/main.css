@@ -44,6 +44,7 @@ img {
 
 :root {
   --header-main-color: #ffffff;
+  --mob-main-color: #303030;
   --light-theme-top-text-color: #303030;
   --dark-theme-top-text-color: rgba(157, 164, 189, 0.6);
   --light-theme-title-color: #303030;
@@ -161,7 +162,7 @@ img {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.3333333333;
   letter-spacing: 0.09em;
   text-align: center;
   cursor: pointer;
@@ -181,6 +182,26 @@ img {
 .button:hover, .button:focus {
   color: var(--second-button-color);
   background-color: var(--accent-color);
+}
+
+.backdrop {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  background-color: rgba(25, 28, 38, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  box-shadow: none;
 }
 
 .header {
@@ -303,6 +324,7 @@ img {
 }
 
 .mob-menu-button {
+  height: inherit;
   display: block;
   margin-left: auto;
   background-color: transparent;
@@ -319,6 +341,112 @@ img {
   .mob-menu-button {
     display: none;
   }
+}
+
+.mob-menu {
+  display: block;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mob-menu .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 48px 31px 227px 61px;
+}
+.mob-menu .mob-menu-button {
+  margin-bottom: 30px;
+}
+
+.mob-cross {
+  fill: var(--mob-main-color);
+  margin-top: -8px;
+}
+
+.mob-nav-list,
+.mob-connect {
+  margin-bottom: 64px;
+}
+
+.mob-nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.1em;
+  color: var(--mob-main-color);
+  transition: color 250ms var(--timing-function);
+}
+.mob-nav-link:hover, .mob-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.mob-tel {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.1em;
+  color: var(--mob-main-color);
+  transition: color 250ms var(--timing-function);
+}
+.mob-tel:hover, .mob-tel:focus {
+  color: var(--accent-color);
+}
+
+.mob-connect-button {
+  margin-top: 24px;
+}
+
+.mob-soc-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mob-soc-item:nth-child(1) {
+  margin-bottom: 24px;
+}
+.mob-soc-item:nth-child(1)::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+  background-color: currentColor;
+}
+
+.mob-soc-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.21em;
+  color: var(--mob-main-color);
+  transition: color 250ms var(--timing-function);
+}
+.mob-soc-link:hover, .mob-soc-link:focus {
+  color: var(--accent-color);
 }
 
 .hero .container {

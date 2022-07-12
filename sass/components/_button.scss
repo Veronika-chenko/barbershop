@@ -6,7 +6,7 @@
     height: 40px;
 
     font-family: inherit;
-    @include font (600, 12px, 1.33, 0.09em);
+    @include font (600, 12px, calc(16px / 12px), 0.09em);
     text-align: center;
     cursor: pointer;
     color: var(--main-button-color);

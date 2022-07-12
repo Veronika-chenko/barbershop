@@ -7,6 +7,8 @@
 // 3) in tab -> wrong height of .mob-menu-button,
 // it should be 40px;
 // 
+
+// 4) in mob-menu need to fix youtube position
 .header {
     position: absolute;
     width: 100%;
@@ -119,6 +121,8 @@
 }
 // ////////
 .mob-menu-button {
+height: inherit;
+
     display: block;
     margin-left: auto;
     background-color: transparent;
@@ -137,3 +141,112 @@
     }
 }
 
+.mob-menu {
+    display: block;
+    @include tablet {
+        display: none;
+    }
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
+    background-color: #fff;
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms var(--timing-function),
+    visibility 250ms var(--timing-function);
+
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        padding: 48px 31px 227px 61px;
+    }
+
+    & .mob-menu-button {
+        margin-bottom: 30px;
+    }
+}
+.mob-cross {
+    fill: var(--mob-main-color);
+    // crutch⚠️ find something
+    margin-top: -8px;
+}
+
+.mob-nav-list,
+.mob-connect {
+    margin-bottom: 64px;
+}
+
+.mob-nav-item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.mob-nav-link {
+    @include font (600, 18px, calc(25 / 18), 0.1em);
+    color: var(--mob-main-color);
+    transition: color 250ms var(--timing-function);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-tel {
+    @include font (600, 18px, calc(25 / 18), 0.1em);
+    color: var(--mob-main-color);
+    transition: color 250ms var(--timing-function);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-connect-button {
+    margin-top: 24px;
+}
+
+.mob-soc-item {
+    display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    &:nth-child(1) {
+        margin-bottom: 24px;
+        &::before {
+                display: block;
+                content: "";
+                width: 60px;
+                height: 1px;
+                margin-right: 40px;
+                background-color: currentColor;
+                // flex-shrink: 0;
+            }
+    }
+}
+.mob-soc-link {
+    @include font (600, 14px, calc(19 / 14), 0.21em);
+    color: var(--mob-main-color);
+    transition: color 250ms var(--timing-function);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    
+}
