@@ -13,9 +13,11 @@
     position: absolute;
     width: 100%;
     padding-top: 32px;
+    z-index: 3;
     .container {
-        // width: 100%;
-        display: flex;
+        @include tablet {
+            display: flex;
+        }
         @include desktop {
             align-items: center;
         }
@@ -28,15 +30,14 @@
         margin-right: 70px;
     }
 }
+
 .logo-icon {
     fill: #ffffff;
     @include tablet {
         fill: #303030;
     }
 }
-
 // ///////////
-
 .nav {
     display: none;
 
@@ -44,12 +45,12 @@
         display: block;
     }
 }
+
 .nav-list {
     display: flex;
 }
 
 .nav-item {
-    
     &:not(:last-child) {
         margin-right: 24px;
 
@@ -58,6 +59,7 @@
         }
     }
 }
+
 .nav-link {
     display: block;
     padding-top: 12px;
@@ -82,6 +84,7 @@
         margin-left: auto;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         // flex-wrap: wrap;
         flex-direction: column-reverse;
         // margin-left: 40px;
@@ -94,6 +97,7 @@
         margin-left: auto;
     }
 }
+
 .header-tel {
     @include desktop {
         padding-top: 12px;
@@ -108,6 +112,7 @@
         color: var(--accent-color);
     }
 }
+
 .header-button {
     // problem with align-items on tablet
     // margin-top: 40px;
@@ -119,12 +124,35 @@
         margin-bottom: 0;
     }
 }
-// ////////
-.mob-menu-button {
-height: inherit;
 
-    display: block;
-    margin-left: auto;
+.header-add-wrap {
+    @media screen and (max-width: 767.98px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu-buttons-wrap {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    @include tablet {
+        display: none;
+    }
+}
+
+.mob-menu-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+
     background-color: transparent;
     border: none;
     padding: 0;
@@ -135,17 +163,23 @@ height: inherit;
     &:hover,
     &:focus {
         fill: var(--accent-color);
+        .mob-cross {
+            fill: var(--accent-color);
+        }
     }
-    @include tablet {
+
+    &.is-hidden {
         display: none;
     }
 }
 
+.mob-cross {
+    fill: var(--mob-main-color);
+    transition: fill 250ms var(--timing-function);
+}
+// 
+
 .mob-menu {
-    display: block;
-    @include tablet {
-        display: none;
-    }
     position: fixed;
     z-index: 500;
     top: 0;
@@ -159,31 +193,23 @@ height: inherit;
     transition: opacity 250ms var(--timing-function),
     visibility 250ms var(--timing-function);
 
-
-    &.is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
-    
-    .container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 100%;
-        padding: 48px 31px 227px 61px;
-    }
-
-    & .mob-menu-button {
-        margin-bottom: 30px;
+    @include tablet {
+        display: none;
     }
 }
-.mob-cross {
-    fill: var(--mob-main-color);
-    // crutch⚠️ find something
-    margin-top: -8px;
+
+.mob-menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 360px;
+    height: 100%;
+    padding: 118px 31px 227px 61px;
 }
+
+
 
 .mob-nav-list,
 .mob-connect {
@@ -191,16 +217,20 @@ height: inherit;
 }
 
 .mob-nav-item {
-    &:not(:last-child) {
-        margin-bottom: 24px;
+    &:not(:first-child) .mob-nav-link {
+        padding-top: 12px;
+    }
+    &:not(:last-child) .mob-nav-link{
+        padding-bottom: 12px;
     }
 }
 
 .mob-nav-link {
+    display: inline-block;
     @include font (600, 18px, calc(25 / 18), 0.1em);
     color: var(--mob-main-color);
     transition: color 250ms var(--timing-function);
-    
+
     &:hover,
     &:focus {
         color: var(--accent-color);
@@ -222,23 +252,27 @@ height: inherit;
     margin-top: 24px;
 }
 
-.mob-soc-item {
+.mob-soc-list {
+    position: relative;
+    
     display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    &:nth-child(1) {
-        margin-bottom: 24px;
-        &::before {
-                display: block;
-                content: "";
-                width: 60px;
-                height: 1px;
-                margin-right: 40px;
-                background-color: currentColor;
-                // flex-shrink: 0;
-            }
+    flex-direction: column;
+    gap: 24px;
+
+    padding-left: 100px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
     }
 }
+
 .mob-soc-link {
     @include font (600, 14px, calc(19 / 14), 0.21em);
     color: var(--mob-main-color);

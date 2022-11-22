@@ -34,21 +34,20 @@
 }
 
 .prices-list-wrap {
+    display: flex;
     @media screen and (max-width: 1279.98px) {
+        flex-direction: column;
+        gap: 20px;
         padding: 30px;
 
         background: linear-gradient(180deg, #171A24 0%, 
         rgba(23, 26, 36, 0.2) 100%);  
     }
-
-    @include desktop {
-        display: flex;
-    }
 }
 
 .prices-list {
     flex-grow: 1;
-    @media screen and (max-width: 1999.98px) {
+    @media screen and (max-width: 1279.98.98px) {
         &:first-child {
             margin-bottom: 20px;
         }
