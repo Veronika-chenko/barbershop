@@ -5,7 +5,7 @@
     background-color: #F7F7F7;
     .container {
         @media screen and (max-width: 1279.98px) {
-            width: 450px;
+            max-width: 450px;
         }
     }
 }

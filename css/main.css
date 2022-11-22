@@ -970,8 +970,10 @@ body.no-scroll {
   }
 }
 
-.features-content {
-  width: 418px;
+@media screen and (max-width: 767.98px) {
+  .features-content {
+    max-width: 418px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features-content {
@@ -1054,7 +1056,7 @@ body.no-scroll {
 }
 @media screen and (max-width: 1279.98px) {
   .masters .container {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
