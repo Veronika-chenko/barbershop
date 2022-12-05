@@ -1,0 +1,152 @@
+.menu-buttons-wrap {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.mob-menu-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+
+        .mob-cross {
+            fill: var(--accent-color);
+        }
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+}
+
+.mob-cross {
+    fill: var(--mob-main-color);
+    transition: fill 250ms var(--timing-function);
+}
+
+.mob-menu {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
+    background-color: #fff;
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms var(--timing-function),
+        visibility 250ms var(--timing-function);
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.mob-menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 360px;
+    height: 100%;
+    padding: 118px 31px 227px 61px;
+}
+
+
+.mob-nav-list,
+.mob-connect {
+    margin-bottom: 64px;
+}
+
+.mob-nav-item {
+    &:not(:first-child) .mob-nav-link {
+        padding-top: 12px;
+    }
+
+    &:not(:last-child) .mob-nav-link {
+        padding-bottom: 12px;
+    }
+}
+
+.mob-nav-link {
+    display: inline-block;
+    @include font (600, 18px, calc(25 / 18), 0.1em);
+    color: var(--mob-main-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-tel {
+    @include font (600, 18px, calc(25 / 18), 0.1em);
+    color: var(--mob-main-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-connect-button {
+    margin-top: 24px;
+}
+
+.mob-soc-list {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    padding-left: 100px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+    }
+}
+
+.mob-soc-link {
+    @include font (600, 14px, calc(19 / 14), 0.21em);
+    color: var(--mob-main-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}

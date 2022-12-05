@@ -12,116 +12,6 @@
         } 
     }
 }
-// ///////////
-.online-section {
-    background-color: #191C26;
-    @include desktop {
-        flex-grow: 1;
-        padding-right: 40px;
-        padding-left: 31px;
-    }
-}
-
-.online-inner-container {
-    margin: 0 auto;
-    padding: 0 31px;
-
-    @media screen and (max-width: 768px) {
-        max-width: 480px;
-    }
-
-    @include tablet {
-        width: 768px;
-    }
-
-    @include desktop {
-        width: 560px;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.form-field-flex-wrap {
-    @include tablet {
-        display: flex;
-        gap: 30px;
-        margin-bottom: 44px;
-        .form-field {
-            width: 330px;
-        }
-    }
-    @include desktop {
-        .form-field {
-            width: 270px;
-        }
-    }
-}
-
-.online-top-title {
-    margin-bottom: 44px;
-}
-.form-field {
-    position: relative;
-    margin-bottom: 44px;
-    &:first-child {
-        margin-bottom: 29px;
-    }
-    @include desktop {
-        max-width: 560px;
-    }
-}
-.form-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    @include font(600, 11px, 1.36, 0.1em);
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.4);
-    transition: color 250ms var(--timing-function), 
-    transform 250ms var(--timing-function);
-    transform: translate(0);
-}
-.form-input {
-    position: relative;
-    width: 100%;
-    height: 39px;
-
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-
-    &:hover+.form-label,
-    &:focus + .form-label {
-        transform: translateY(-18px);
-        color: #fff;
-    }
-}
-.user-text {
-    position: relative;
-    width: 100%;
-    height: 76px;
-    resize: none;
-
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-
-    &:hover+.form-label,
-    &:focus + .form-label {
-        transform: translateY(-18px);
-        color: #fff;
-    }
-}
-
-.online-form button {
-    display: block;
-    @media screen and (max-width: 767.98px) {
-        margin: 0 auto;
-    }
-}
 
 .contacts {
     @include desktop {
@@ -183,6 +73,7 @@
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
 .contacts-list {
     margin-bottom: 70px;
 }
@@ -200,9 +91,11 @@
     @include font (400, 18px, 1.67, 0.02em);
     color: #9DA4BD;
 }
+
 .contacts-icon {
     margin-right: 16px;
 }
+
 .contacts-top-text {
     color: #ffffff;
 

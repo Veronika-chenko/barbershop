@@ -1,6 +1,11 @@
-.button {
+button {
     display: inline-block;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
 
+.button {
     padding: 12px 15px;
     min-width: 160px;
     height: 40px;
@@ -8,7 +13,6 @@
     font-family: inherit;
     @include font (600, 12px, calc(16px / 12px), 0.09em);
     text-align: center;
-    cursor: pointer;
     color: var(--main-button-color);
 
     border: 1px solid var(--accent-color);

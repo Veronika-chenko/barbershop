@@ -1,4 +1,4 @@
-const swiper = new Swiper('.hero-swiper-container', {
+export const heroSwiper = new Swiper('.hero-swiper-container', {
     navigation: {
         nextEl: '.swiper-btn-next',
         prevEl: '.swiper-btn-prev',

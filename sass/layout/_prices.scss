@@ -35,6 +35,7 @@
 
 .prices-list-wrap {
     display: flex;
+    margin-bottom: 50px;
     @media screen and (max-width: 1279.98px) {
         flex-direction: column;
         gap: 20px;
@@ -55,7 +56,6 @@
 
     @include desktop {
         padding: 30px 40px;
-        margin-bottom: 50px;
         
         &.light {
             background: linear-gradient(180deg, #171A24 0%,

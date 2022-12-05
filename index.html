@@ -11,10 +11,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-add-wrap">
                 <a href="" class="header-logo">
@@ -49,7 +49,7 @@
                 <button type="button" class="header-button button dark">онлайн-запись</button>
             </div>
         </div>
-        <div class="backdrop is-hidden">
+        <div class="backdrop is-hidden" data-mob-menu>
             <div class="mob-menu">
                 <div class="mob-menu-container">
                     <ul class="mob-nav-list">
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </section>
-        <!-- /////////////// -->
+        
         <section class="about" id="about">
             <div class="container">
                 <ul class="about-list">
@@ -165,6 +165,7 @@
                 </div>
             </div>
         </section>
+
         <section class="prices" id="prices">
             <div class="container">
                 <p class="prices-top-text top-text dark">Проведи время в компании лучших мастеров</p>
@@ -411,7 +412,7 @@
                 </ul>
             </div>
         </section>
-        <!-- /////////////////////////////// -->
+
         <section class="gallery">
             <div class="container">
                 <p class="gallery-top-text top-text light">На латинском языке “барба” означает “борода”</p>
@@ -545,6 +546,7 @@
                         </form>
                     </div>
                 </section>
+
                 <section class="contacts" id="contacts">
                     <div class="contacts-inner-container">
                         <h2 class="contacts-top-title top-title dark">Контакты</h2>
@@ -586,6 +588,7 @@
     </main>
     <footer class="footer">
         <div class="container">
+            <a href="#header" class="back-to-top-btn hidden" data-to-top></a>
             <ul class="footer-list list">
                 <li class="footer-item">
                     <a href="" class="footer-link">Instagram</a>
@@ -599,7 +602,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/mob-menu.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
     <script src="./js/hero-slider.js" type="module"></script>
 </body>
 </html>
