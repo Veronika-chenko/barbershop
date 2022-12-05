@@ -10,6 +10,7 @@ html {
 
 body {
   color: var(--main-text-color);
+  background-color: #fff;
   font-family: Open-Sans, sans-serif;
 }
 
@@ -239,7 +240,7 @@ body.no-scroll {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(../images/chevron-top-icon.svg);
+  background-image: url("../images/chevron-top-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
