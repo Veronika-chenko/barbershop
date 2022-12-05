@@ -1,7 +1,6 @@
 .top-title {
     font-family: Raleway, sans-serif;
     @include font (null, 42px, calc(49px / 42px), 0.05em);
-    // margin-bottom: 20px;
 
     &.light {
         color: var(--light-theme-title-color);
