@@ -95,87 +95,87 @@
 
     &:nth-child(1) {
         background-image: var(--gradient),
-            url(../images/hero/hero-1-bg-mob.jpg);
+            url('../images/hero/hero-1-bg-mob.jpg');
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: var(--gradient), url(../images/hero/hero-1-bg-mob-2x.jpg);
+                background-image: var(--gradient), url('../images/hero/hero-1-bg-mob-2x.jpg');
             }
         @include tablet {
             background-image: var(--gradient),
-            url(../images/hero/hero-1-bg-tab.jpg);
+            url('../images/hero/hero-1-bg-tab.jpg');
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: var(--gradient),
-                        url(../images/hero/hero-1-bg-tab-2x.jpg);
+                        url('../images/hero/hero-1-bg-tab-2x.jpg');
                 }
         }
         @include desktop {
             background-image: var(--gradient),
-                url(../images/hero/hero-1-bg-desk.jpg);
+                url('../images/hero/hero-1-bg-desk.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: var(--gradient),
-                    url(../images/hero/hero-1-bg-desk-2x.jpg);
+                    url('../images/hero/hero-1-bg-desk-2x.jpg');
             }
         }
     }
 
     &:nth-child(2) {
         background-image: var(--gradient),
-            url(../images/hero/hero-2-bg-mob.jpg);
+            url('../images/hero/hero-2-bg-mob.jpg');
         @include tablet {
             background-image: var(--gradient),
-                url(../images/hero/hero-2-bg-tab.jpg);
+                url('../images/hero/hero-2-bg-tab.jpg');
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: var(--gradient),
-                    url(../images/hero/hero-2-bg-tab-2x.jpg);
+                    url('../images/hero/hero-2-bg-tab-2x.jpg');
             }
         }
             
         @include desktop {
             background-image: var(--gradient),
-                url(../images/hero/hero-2-bg-desk.jpg);
+                url('../images/hero/hero-2-bg-desk.jpg');
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: var(--gradient),
-                    url(../images/hero/hero-2-bg-desk-2x.jpg);
+                    url('../images/hero/hero-2-bg-desk-2x.jpg');
             }
         }
     }
 
     &:nth-child(3) {
         background-image: var(--gradient),
-            url(../images/hero/hero-3-bg-mob.jpg);
+            url('../images/hero/hero-3-bg-mob.jpg');
         @include tablet {
             background-image: var(--gradient),
-                url(../images/hero/hero-3-bg-tab.jpg);
+                url('../images/hero/hero-3-bg-tab.jpg');
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: var(--gradient),
-                    url(../images/hero/hero-3-bg-tab-2x.jpg);
+                    url('../images/hero/hero-3-bg-tab-2x.jpg');
             }
         }
             
         @include desktop {
             background-image: var(--gradient),
-                url(../images/hero/hero-3-bg-desk.jpg);
+                url('../images/hero/hero-3-bg-desk.jpg');
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: var(--gradient),
-                    url(../images/hero/hero-3-bg-desk-2x.jpg);
+                    url('../images/hero/hero-3-bg-desk-2x.jpg');
             }
         }
     }
