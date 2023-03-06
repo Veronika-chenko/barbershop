@@ -54,10 +54,13 @@
     height: 100vh;
     background-color: #fff;
 
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 250ms var(--timing-function),
-        visibility 250ms var(--timing-function);
+    transform: translateX(0);
+    transition: transform 500ms var(--timing-function);
+
+    &.is-hidden {
+        transform: translateX(101%);
+    }
+        
 
     @include tablet {
         display: none;
@@ -78,6 +81,8 @@
 
 .mob-nav-list,
 .mob-connect {
+    // display: flex;
+    // flex-direction: column;
     margin-bottom: 64px;
 }
 
@@ -115,6 +120,7 @@
 }
 
 .mob-connect-button {
+    display: inline-block;
     margin-top: 24px;
 }
 

@@ -84,11 +84,12 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    outline: none;
 
     &:hover+.form-label,
-    &:focus+.form-label {
+    &:focus+.form-label,
+    &:not(:focus):not(:placeholder-shown)+.form-label {
         transform: translateY(-18px);
-        color: #fff;
     }
 }
 
@@ -102,11 +103,13 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    outline: none;
 
     &:hover+.form-label,
-    &:focus+.form-label {
+    &:focus+.form-label,
+    &:not(:focus):not(:placeholder-shown)+.form-label {
         transform: translateY(-18px);
-        color: #fff;
+        
     }
 }
 
